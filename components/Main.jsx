@@ -15,12 +15,12 @@ const Main = () => {
       <div className="max-w-[1240px] w-full h-full mx-auto flex justify-center items-center">
         <div>
           <h1 className="py-4 black">
-            Hey, I'm <span className="text-gray-400 tracking-widest">ARK</span>!
+            Hey, I&apos;m <span className="text-gray-400 tracking-widest">ARK</span>!
           </h1>
           <h3 className="py-2">A Back-End Developer</h3>
           <p>
             I am a Software Developer specializing in building Back-End REST
-            API's, I occasionally do some frontend work(only if I have to). I
+            API&apos;s, I occasionally do some frontend work(only if I have to). I
             currently work as a Back-End developer while constantly advancing my
             skills in my leisure.
           </p>
