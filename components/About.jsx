@@ -27,7 +27,7 @@ const About = () => {
         <div className="col-span-1 w-fit h-fit m-auto shadow-xl shadow-gray-300 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-200">
           <Image
             className="rounded-xl"
-            src="/../public/assets/me.jpg"
+            src="/assets/me.jpg"
             alt="/"
             width="300"
             height="400"
