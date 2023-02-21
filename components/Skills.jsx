@@ -1,113 +1,79 @@
 import React from "react";
-import { FaPython } from "react-icons/fa";
+import { AiOutlineBoxPlot } from "react-icons/ai";
 import {
-  SiDjango,
-  SiExpress,
-  SiFastapi,
-  SiJavascript,
-  SiNodedotjs,
-  SiPostgresql,
-  SiPython,
-  SiSequelize,
-} from "react-icons/si";
+  FaReact, FaNodeJs,FaVuejs,FaHtml5, FaCss3, FaPython, FaGit, FaTree, FaAws
 
-export const Skills = () => {
+} from "react-icons/fa";
+import { ImStack } from "react-icons/im";
+import {SiAmazonaws, SiDjango, SiDocker, SiFastapi, SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNumpy, SiPandas, SiPostgresql, SiPython, SiTailwindcss} from 'react-icons/si'
+import SkillCategory from "./SkillCategory";
+// import SkillCategory from "./SkillCategory";
+
+const frontendSkills = [
+  { name: 'Tailwind', level: 40, icon: SiTailwindcss },
+  { name: 'Next.JS', level: 50, icon: SiNextdotjs },
+  // ...
+]
+
+const backendSkills = [
+  { name: 'Django', level: 70, icon: SiDjango },
+  { name: 'FastAPI', level: 70, icon: SiFastapi },
+  { name: 'Node.js', level: 60, icon: FaNodeJs },
+  // ...
+]
+
+const languages=[
+  {name:'Python',level:70,icon:FaPython},
+  { name: 'JavaScript', level: 50, icon:SiJavascript },
+
+]
+
+const databaseSkills = [
+  { name: 'MySQL', level: 70, icon: SiMysql },
+  { name: 'PostgreSQL', level: 80, icon: SiPostgresql },
+  { name: 'MongoDB', level: 50, icon: SiMongodb },
+  // ...
+]
+
+const ITConstructs = [
+  { name: 'Git', level: 70, icon: SiGit },
+  { name: 'DataStructure', level: 50, icon: ImStack },
+  // ...
+]
+const DataVisualization = [
+  { name: 'Pandas', level: 30, icon: SiPandas },
+  { name: 'NumPY', level: 30, icon: SiNumpy },
+  { name: 'Matplotlib', level: 30, icon: AiOutlineBoxPlot },
+  // ...
+]
+const Tools = [
+  { name: 'AWS', level: 60, icon: FaAws },
+  { name: 'Docker', level: 60, icon: SiDocker },
+  // ...
+]
+
+
+
+
+const Skills = () => {
   return (
-    <div id="Skills" className="w-full lg:h-screen py-16">
-      <div className="max-w-[1240px] mx-auto h-full flex flex-col justify-center">
+    <div id="Skills" className="w-full lg:h-screen py-16 px-4">
+      <div className="max-w-[1240px] mx-auto h-full justify-center">
         <p className="text-xl tracking-widest uppercase p-2 text-gray-500">
           Skills
         </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2">
-              <div className="">
-                <SiPython size={40} />
-              </div>
-              <div>
-                <h3>Python</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2">
-              <div className="">
-                <SiPostgresql size={40} />
-              </div>
-              <div>
-                <h3>PostgreSQL</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2">
-              <div className="">
-                <SiJavascript size={40} />
-              </div>
-              <div>
-                <h3>JavaScript</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2">
-              <div className="">
-                <SiDjango size={40} />
-              </div>
-              <div>
-                <h3>Django</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2">
-              <div className="">
-                <SiFastapi size={40} />
-              </div>
-              <div>
-                <h3>FastAPI</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2">
-              <div className="">
-                <SiNodedotjs size={40} />
-              </div>
-              <div>
-                <h3>NodeJS</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2">
-              <div className="">
-                <SiExpress size={40} />
-              </div>
-              <div>
-                <h3>ExpressJS</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2">
-              <div className="">
-                <SiSequelize size={40} />
-              </div>
-              <div>
-                <h3>Sequelize</h3>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 mx-auto py-8 gap-6">
+        <SkillCategory skills={languages} category="Languages" />
+        <SkillCategory skills={backendSkills} category="Backend Frameworks" />
+        <SkillCategory skills={databaseSkills} category="Databases" />
+        <SkillCategory skills={frontendSkills} category="Web Frontend" />
+        <SkillCategory skills={ITConstructs} category="IT Constructs" />
+        <SkillCategory skills={DataVisualization} category="Data Visalization" />
+        <SkillCategory skills={Tools} category="Tools Used" />
+      </div>
       </div>
     </div>
   );
 };
+
+export default Skills

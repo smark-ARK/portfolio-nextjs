@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import simple_social from "@/public/assets/projects/simple_social_swagger_docs.png";
-import job_engine from "@/public/assets/projects/job_engine_swagger_docs.png";
+import projects from "@/data/projects.json"
 import Link from "next/link";
 import ProjectItem from "./ProjectItem";
 
@@ -13,8 +12,8 @@ const Projects = () => {
           Projects
         </p>
 
-        <div className="grid md:grid-cols-2 lg:cols-3 gap-4">
-          <ProjectItem
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 py-8">
+          {/* <ProjectItem
             title="Simple Social API"
             description="An API for a simple text based Social Media APP Where you can Create Account, Post Stuff, React to stuff, Delete Posts. Pretty Basic and straightforward functionality as it was the first API I ever made."
             projectImg={simple_social}
@@ -29,7 +28,16 @@ const Projects = () => {
             gitHubLink="https://github.com/smark-ARK/job_engine_API.git"
             liveLink="https://job-engine-api.onrender.com/docs"
             moreInfo="/"
-          />
+          /> */}
+          {
+            projects.map(
+              (project)=>(
+                <ProjectItem key={project.id} project={project}/>
+              )
+            )
+          }
+
+
         </div>
       </div>
     </div>

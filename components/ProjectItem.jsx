@@ -1,50 +1,33 @@
-import React from "react";
-import {
-  FaGithub,
-  FaGlobe,
-  FaInfo,
-  FaInfoCircle,
-  FaInternetExplorer,
-} from "react-icons/fa";
-import { ImEarth } from "react-icons/im";
-import { AiOutlineInfoCircle } from "react-icons/ai";
-import Link from "next/link";
-import Image from "next/image";
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import { FaChevronRight, FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 
-const ProjectItem = ({
-  projectImg,
-  title,
-  description,
-  gitHubLink,
-  liveLink,
-  moreInfo,
-}) => {
+const basePath="/@/public/assets"
+
+const ProjectItem = ({project}) => {
+    // const image=require(project.image)
   return (
-    <div className="flex relative items-center justify-center rounded-xl p-4 shadow-xl w-full h-auto group hover:bg-gradient-to-r from-gray-700 to-gray-900 ">
-      <Image
-        className="rounded-xl group-hover:opacity-10"
-        src={projectImg}
-        alt="/"
-      />
-      <div className="hidden group-hover:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h3 className="text-2xl tracking-wider text-white text-center">
-          {title}
-        </h3>
-        <p className="text-white py-2 text-sm text-center">{description}</p>
-        <div className="flex items-center justify-between py-2">
-          <Link className="rounded-full bg-white p-2" target="_blank" href={gitHubLink}>
-            <FaGithub />
-          </Link>
-          <Link className="rounded-full bg-white p-2" target="_blank" href={liveLink}>
-            <ImEarth />
-          </Link>
-          <Link className="rounded-full bg-white p-2" target="_blank" href={moreInfo}>
-            <AiOutlineInfoCircle />
-          </Link>
+    <div key={project.id} className="border border-gray-300 rounded-md shadow-lg flex flex-col">
+        <img className='rounded-md w-full h-auto' src={project.image} alt={project.title}/>
+        <div className='p-4'>
+            <p className='text-l font-semibold tracking-wider'>{project.title}</p>
+            <p className='text-sm mt-2 max-h-20 overflow-hidden'>{project.description}</p>
         </div>
-      </div>
-    </div>
-  );
-};
+        <div className="flex items-center justify-evenly m-4">
+            <Link target="_blank" rel="noopener noreferrer" className="text-gray-500 mx-2 hover:text-black" href={project.github}>
+                <FaGithub size={20} />
+            </Link>
+            <Link target="_blank" rel="noopener noreferrer" className="text-gray-500 mx-2 hover:text-black" href={project.live}>
+                <FaExternalLinkAlt size={20} />
+            </Link>
+            <Link className="text-gray-500 mx-2 hover:text-black" href={project.detail}>
+                <FaChevronRight size={20} />
+            </Link>
+        </div>
 
-export default ProjectItem;
+    </div>
+  )
+}
+
+export default ProjectItem

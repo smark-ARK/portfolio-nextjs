@@ -10,7 +10,7 @@ import {
 } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
-export const Navbar = () => {
+const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -99,12 +99,12 @@ export const Navbar = () => {
                     About
                   </li>
                 </Link>
-                <Link href="/#Skills">
+                <Link href="/#Projects">
                   <li className="uppercase text-md my-10 hover:border-b">
                     Projects
                   </li>
                 </Link>
-                <Link href="/#Projects">
+                <Link href="/#Skills">
                   <li className="uppercase text-md my-10 hover:border-b">
                     Skills
                   </li>
@@ -148,4 +148,4 @@ export const Navbar = () => {
   );
 };
 
-module.exports = Navbar;
+export default Navbar

@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import Navbar from "../components/Navbar";
 import Main from "@/components/Main";
 import { useState } from "react";
 import About from "@/components/About";
-import { Skills } from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Navbar from "@/components/Navbar";
+import Skills from "@/components/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
