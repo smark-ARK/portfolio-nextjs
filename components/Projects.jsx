@@ -12,7 +12,7 @@ const Projects = () => {
           Projects
         </p>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
           {/* <ProjectItem
             title="Simple Social API"
             description="An API for a simple text based Social Media APP Where you can Create Account, Post Stuff, React to stuff, Delete Posts. Pretty Basic and straightforward functionality as it was the first API I ever made."

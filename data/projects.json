@@ -3,6 +3,8 @@
       "id": 1,
       "title": "Simple Social",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "tag":"A Rest API",
+      "tech":["python","FastAPI","PostgreSQL","SQLAlchemy","Alembic"],
       "image": "/assets/projects/property.jpg",
       "github": "https://github.com/smark-ARK/simple_social.git",
       "live": "https://simple-social.onrender.com/docs",
@@ -26,10 +28,12 @@
       "id": 2,
       "title": "Job Engine",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "tag":"A Rest API",
       "image": "/assets/projects/job_engine_swagger_docs.png",
       "github": "https://github.com/smark-ARK/job_engine_API.git",
       "live": "https://job-engine-api.onrender.com/docs",
       "detail": "/project/2",
+      "tech":["python","FastAPI","PostgreSQL"],
       "subtopics": [
         {
           "id": 1,
