@@ -2,25 +2,19 @@
     {
       "id": 1,
       "title": "Simple Social",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "tag":"A Rest API",
+      "description": "In the digital age, social media platforms have become an essential part of our daily lives, connecting people from all over the world and facilitating communication and sharing of ideas. To build a social media app, developers need to create an API that can handle various user actions, such as creating an account, posting content, liking posts, and viewing other users' posts. This essay will describe the features of a REST API that could be used to build a simple social media app.",
+      "tag":"A Rest API for a simple social media app.",
       "tech":["python","FastAPI","PostgreSQL","SQLAlchemy","Alembic"],
-      "image": "/assets/projects/property.jpg",
+      "image": "/assets/projects/simple_social_swagger_docs.png",
       "github": "https://github.com/smark-ARK/simple_social.git",
       "live": "https://simple-social.onrender.com/docs",
       "detail": "/project/1",
       "subtopics": [
         {
-          "id": 1,
-          "title": "Subtopic 1",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "image": "/images/subtopic1.png"
-        },
-        {
-          "id": 2,
-          "title": "Subtopic 2",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "image": "/images/subtopic2.png"
+          "id":1,
+          "title":"Authentication",
+          "description":"To start with, the API would require users to authenticate using a username and password. This ensures that only authorized users can access the app's features and that their data is secure. Upon successful authentication, the API would return a JSON Web Token (JWT) that would need to be included in all subsequent API requests as an Authorization header.",
+          "image":"/assets/projects/simple_social_auth.png"
         }
       ]
     },
@@ -28,7 +22,7 @@
       "id": 2,
       "title": "Job Engine",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "tag":"A Rest API",
+      "tag":"A Rest API for a simple Job Seaech and recruiting app.",
       "image": "/assets/projects/job_engine_swagger_docs.png",
       "github": "https://github.com/smark-ARK/job_engine_API.git",
       "live": "https://job-engine-api.onrender.com/docs",

@@ -11,6 +11,9 @@ export default function ProjectDetail({ project }) {
       <div className='w-full h-[30vh] lg:h-[40vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black opacity-80 z-10' />
         <Image className='absolute z-1' src={project.image} alt={project.title} fill object-fit="cover"/>
+        {/* <div className='absolute top-1 left-1 max-w-[1240px] w-full text-white z-20'>
+          <FaChevronLeft size={20}/>
+        </div> */}
       <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-20 p-2 text-white'>
         <h2 className='p-2 uppercase tracking-wider font-semibold'>{project.title}</h2>
         <p className='px-2'>{project.tag}</p>
@@ -25,7 +28,9 @@ export default function ProjectDetail({ project }) {
             project.subtopics.map((subtopic)=>(
               <div className='my-4' key={subtopic.id}>
                 <h3>{subtopic.title}</h3>
-                <img src={subtopic.image} alt={subtopic.title} />
+                <div className='rounded-lg border-gray-500 p-3'>
+                <img className='h-21 w-auto p-3' src={subtopic.image} alt={subtopic.title} />
+                </div>
                 <p>{subtopic.description}</p>
               </div>
             ))

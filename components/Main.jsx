@@ -11,7 +11,7 @@ import {
 
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center p-10">
+    <div id="home" className="w-full h-screen text-center p-10">
       <div className="max-w-[1240px] w-full h-full mx-auto flex justify-center items-center">
         <div>
           <h1 className="py-4 black">
@@ -25,22 +25,22 @@ const Main = () => {
             skills in my leisure.
           </p>
           <div className="flex justify-between items-center max-w-[330px] m-auto py-5">
-            <div className="rounded-full p-4 shadow-lg shadow-gray-300 hover:cursor-pointer hover:scale-150">
+            <div className="rounded-full p-4 shadow-lg shadow-gray-300 hover:cursor-pointer hover:scale-150 ease-in-out duration-200">
               <Link target="_blank" href="https://linkedin.com/in/smark-ark/">
                 <FaLinkedinIn />
               </Link>
             </div>
-            <div className="rounded-full p-4 shadow-lg shadow-gray-300 hover:cursor-pointer hover:scale-150">
+            <div className="rounded-full p-4 shadow-lg shadow-gray-300 hover:cursor-pointer hover:scale-150 ease-in-out duration-200">
               <Link target="_blank" href="https://github.com/smark-ark">
                 <FaGithub />
               </Link>
             </div>
-            <div className="rounded-full p-4 shadow-lg shadow-gray-300 hover:cursor-pointer hover:scale-150">
+            <div className="rounded-full p-4 shadow-lg shadow-gray-300 hover:cursor-pointer hover:scale-150 ease-in-out duration-200">
               <Link target="_blank" href="https://twitter.com/the_ARK__">
                 <FaTwitter />
               </Link>
             </div>
-            <div className="rounded-full p-4 shadow-lg shadow-gray-300 hover:cursor-pointer hover:scale-150">
+            <div className="rounded-full p-4 shadow-lg shadow-gray-300 hover:cursor-pointer hover:scale-150 ease-in-out duration-200">
               <Link target="_blank" href="mailto:arkhangreat2@gmail.com">
                 <AiFillMail />
               </Link>
