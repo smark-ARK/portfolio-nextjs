@@ -57,7 +57,7 @@ const Tools = [
 
 const Skills = () => {
   return (
-    <div id="Skills" className="w-full lg:h-screen py-16 px-4">
+    <div id="Skills" className="w-full min-h-screen py-16 px-4">
       <div className="max-w-[1240px] mx-auto h-full justify-center">
         <p className="text-xl tracking-widest uppercase p-2 text-gray-500">
           Skills

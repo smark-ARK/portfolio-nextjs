@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="About" className="w-full h-screen p-2 flex items-center py-16 px-4">
+    <div id="About" className="w-full min-h-screen p-2 flex items-center py-16 px-4">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase tracking-widest text-xl text-gray-600 py-2">
@@ -27,15 +27,15 @@ In addition to my interest in these emerging technologies, my focus is on develo
 <br />
 <br />
 My Bachelor&apos;s degree has certainly helped me to build a foundation of knowledge, but I believe that my passion and drive to learn and grow have been crucial in achieving success in the tech industry. As a backend developer, I&apos;m confident in my abilities and look forward to continuing to develop my skills and take on new challenges in the future, particularly in the exciting fields of microservices, machine learning, and artificial intelligence.
+<br />
+<br />
           </p>
         </div>
-        <div className="col-span-1 w-fit h-fit m-auto shadow-xl shadow-gray-300 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-200">
-          <Image
-            className="rounded-xl"
+        <div className="col-span-1 w-fit h-fit m-auto shadow-md border border-gray-300 rounded-md flex p-2 items-center justify-center hover:scale-105 ease-in duration-200 ">
+          <img
+            className="rounded-md h-full w-auto"
             src="/assets/me.jpg"
             alt="/"
-            width="300"
-            height="400"
           />
         </div>
       </div>
