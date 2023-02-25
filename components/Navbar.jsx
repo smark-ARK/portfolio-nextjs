@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import {
   AiOutlineClose,
   AiOutlineCloseCircle,
@@ -13,12 +13,32 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
+  const [lastScrollPosition,setLastScrollPosition]=useState(0);
+  const [isNavHidden,setIsNavHidden]=useState(false);
+
+  useEffect(()=>{
+    function handleScroll(){
+
+      let currentScrollPosition=window.scrollY
+      if (currentScrollPosition>lastScrollPosition){
+        setIsNavHidden(true)
+      }else{
+  
+        setIsNavHidden(false)
+      }
+  
+      setLastScrollPosition(currentScrollPosition)
+    }
+    window.addEventListener('scroll',handleScroll)
+    return ()=>window.removeEventListener('scroll',handleScroll)
+  },[lastScrollPosition]);
+
   const handleNav = () => {
     setNav(!nav);
   };
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
-      <div className=" flex justify-between items-center w-full h-full px-2 2xl:px-16">
+    <div className={`fixed w-full h-20 shadow-l z-[100] ease-in-out duration-500 ${isNavHidden?"-translate-y-full":"translate-y-0"}`}>
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <div className="w-20 h-full p-2">
           <Link href="/#home">
             <Image
@@ -60,7 +80,7 @@ const Navbar = () => {
       <div
         onClick={handleNav}
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/60" : ""
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/60 ease-in-out duration-500" : ""
         }
       >
         <div
@@ -99,14 +119,15 @@ const Navbar = () => {
                     About
                   </li>
                 </Link>
-                <Link href="/#Projects" scroll={false}>
-                  <li className="uppercase text-md my-10 hover:border-b">
-                    Projects
-                  </li>
-                </Link>
+                
                 <Link href="/#Skills" scroll={false}>
                   <li className="uppercase text-md my-10 hover:border-b">
                     Skills
+                  </li>
+                </Link>
+                <Link href="/#Projects" scroll={false}>
+                  <li className="uppercase text-md my-10 hover:border-b">
+                    Projects
                   </li>
                 </Link>
                 {/* <Link href="/#home">
