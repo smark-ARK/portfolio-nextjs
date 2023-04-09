@@ -5,7 +5,8 @@ import {
 
 } from "react-icons/fa";
 import { ImStack } from "react-icons/im";
-import {SiAmazonaws, SiDjango, SiDocker, SiFastapi, SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNumpy, SiPandas, SiPostgresql, SiPython, SiTailwindcss} from 'react-icons/si'
+import { GrGolang } from "react-icons/gr";
+import {SiAmazonaws, SiDjango, SiDocker, SiFastapi, SiGit, SiGoland, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNumpy, SiPandas, SiPostgresql, SiPython, SiTailwindcss} from 'react-icons/si'
 import SkillCategory from "./SkillCategory";
 // import SkillCategory from "./SkillCategory";
 
@@ -25,6 +26,7 @@ const backendSkills = [
 const languages=[
   {name:'Python',level:70,icon:FaPython},
   { name: 'JavaScript', level: 50, icon:SiJavascript },
+  { name: 'Go', level: 30, icon:SiGoland },
 
 ]
 

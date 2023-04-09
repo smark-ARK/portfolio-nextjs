@@ -86,7 +86,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "md:hidden fixed left-0 top-0 w-[70%] sm:w-[60%] md:[45%] h-screen bg-[#ecf0f3] p-9 ease-in duration-500"
+              ? "md:hidden fixed left-0 top-0 w-[70%] sm:w-[60%] md:[45%] min-h-screen bg-[#ecf0f3] p-9 ease-in duration-500"
               : "fixed left-[-100%] top-0 ease-in duration-500"
           }
         >
@@ -136,7 +136,7 @@ const Navbar = () => {
                   </li>
                 </Link> */}
               </ul>
-              <div className="pt-40">
+              <div className="pt-20">
                 <p className="uppercase tracking-widest">Let&apos;s Connect</p>
                 <div className="flex justify-between items-center my-4 w-full sm:w-[80%]">
                   <div className="rounded-full shadow-md shadow-gray-300 p-3">
