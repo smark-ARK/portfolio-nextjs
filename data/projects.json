@@ -5,9 +5,9 @@
       "description": "In the digital age, social media platforms have become an essential part of our daily lives, connecting people from all over the world and facilitating communication and sharing of ideas. To build a social media app, developers need to create an API that can handle various user actions, such as creating an account, posting content, liking posts, and viewing other users' posts. This essay will describe the features of a REST API that could be used to build a simple social media app.",
       "tag":"A Rest API for a simple social media app.",
       "tech":["python","FastAPI","PostgreSQL","SQLAlchemy","Alembic"],
-      "image": "/assets/projects/simple_social_swagger_docs.png",
+      "image": "/assets/projects/simple_social_frontend.png",
       "github": "https://github.com/smark-ARK/simple_social.git",
-      "live": "https://simple-social.onrender.com/docs",
+      "live": "https://simple-social-smark.netlify.app/",
       "detail": "/project/1",
       "subtopics": [
         {
