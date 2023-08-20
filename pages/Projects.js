@@ -36,12 +36,12 @@ export default function Home() {
             >
               <FaExternalLinkAlt size={20} />
             </Link>
-            <Link
+            {/* <Link
               className="text-gray-600 mx-2 hover:text-gray-800"
               href={project.detail}
             >
               <FaChevronRight size={20} />
-            </Link>
+            </Link> */}
           </div>
         </div>
       ))}

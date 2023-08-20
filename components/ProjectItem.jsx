@@ -24,9 +24,9 @@ const ProjectItem = ({project}) => {
                     <Link target="_blank" rel="noopener noreferrer" className="text-white mx-2 hover:text-black" href={project.live}>
                         <FaExternalLinkAlt size={20} />
                     </Link>
-                    <Link className="text-white mx-2 hover:text-black" href={project.detail}>
+                    {/* <Link className="text-white mx-2 hover:text-black" href={project.detail}>
                         <FaChevronRight size={20} />
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>
