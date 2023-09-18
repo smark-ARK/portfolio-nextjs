@@ -6,15 +6,33 @@ import {
 } from "react-icons/fa";
 import { ImStack } from "react-icons/im";
 import { GrGolang } from "react-icons/gr";
-import {SiAmazonaws, SiDjango, SiDocker, SiFastapi, SiGit, SiGoland, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNumpy, SiPandas, SiPostgresql, SiPython, SiTailwindcss} from 'react-icons/si'
+import {
+  SiAmazonaws,
+  SiDjango,
+  SiDocker,
+  SiFastapi,
+  SiGit,
+  SiGoland,
+  SiJavascript,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNumpy,
+  SiPandas,
+  SiPostgresql,
+  SiPython,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import SkillCategory from "./SkillCategory";
 // import SkillCategory from "./SkillCategory";
 
 const frontendSkills = [
-  { name: 'Tailwind', level: 40, icon: SiTailwindcss },
-  { name: 'Next.JS', level: 50, icon: SiNextdotjs },
+  { name: "Tailwind", level: 40, icon: SiTailwindcss },
+  { name: "Next.JS", level: 50, icon: SiNextdotjs },
+  { name: "Typescript", level: 50, icon: SiTypescript },
   // ...
-]
+];
 
 const backendSkills = [
   { name: 'Django', level: 70, icon: SiDjango },
