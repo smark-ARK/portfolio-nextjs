@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import kmzee from "../public/kmzee.jpg";
+import kmzee from "../public/assets/Kmzee.jpg";
 import Image from "next/image";
 
 const experiences = [
