@@ -21,7 +21,7 @@
     {
       "id": 2,
       "title": "Job Engine",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "In the digital age, social media platforms have become an essential part of our daily lives, connecting people from all over the world and facilitating communication and sharing of ideas. To build a social media app, developers need to create an API that can handle various user actions, such as creating an account, posting content, liking posts, and viewing other users' posts. This essay will describe the features of a REST API that could be used to build a simple social media app.",
       "tag":"A Rest API for a simple Job Seaech and recruiting app.",
       "image": "/assets/projects/job_engine_swagger_docs.png",
       "github": "https://github.com/smark-ARK/job_engine_API.git",

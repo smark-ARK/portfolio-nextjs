@@ -1,43 +1,30 @@
-import Image from "next/image";
+"use-client";
 import React from "react";
-import projects from "@/data/projects.json"
+import projects from "@/data/projects.json";
 import Link from "next/link";
 import ProjectItem from "./ProjectItem";
+import Project from "./Project";
 
 const Projects = () => {
   return (
     <div id="Projects" className="w-full min-h-screen">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl text-gray-500 tracking-widest uppercase py-2">
-          Projects
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
-          {/* <ProjectItem
-            title="Simple Social API"
-            description="An API for a simple text based Social Media APP Where you can Create Account, Post Stuff, React to stuff, Delete Posts. Pretty Basic and straightforward functionality as it was the first API I ever made."
-            projectImg={simple_social}
-            gitHubLink="https://github.com/smark-ARK/simple_social.git"
-            liveLink="https://simple-social.onrender.com/docs"
-            moreInfo="/"
-          />
-          <ProjectItem
-            title="Job Engine API"
-            description="An API for a job engine APP. Has a slightly more funcionality with multi role authentication. Recruiters can Post, Delete Jobs. Seekers can view and apply jobs. recruiters can then select their desired candidate"
-            projectImg={job_engine}
-            gitHubLink="https://github.com/smark-ARK/job_engine_API.git"
-            liveLink="https://job-engine-api.onrender.com/docs"
-            moreInfo="/"
-          /> */}
-          {
-            projects.map(
-              (project)=>(
-                <ProjectItem key={project.id} project={project}/>
-              )
-            )
-          }
-
-
+      <div className="max-w-[1240px] mx-5 lg:mx-auto  py-20">
+        <div>
+          <p
+            className={`sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-center`}
+          >
+            Just Because I can!
+          </p>
+          <h2
+            className={`text-black font-blatext-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center mt-4`}
+          >
+            Personal / Freelance Projects.
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-20">
+          {projects.map((project) => (
+            <Project key={project.id} project={project} />
+          ))}
         </div>
       </div>
     </div>
