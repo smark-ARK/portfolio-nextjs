@@ -25,8 +25,8 @@
       "tag":"A Rest API for a simple social media app.",
       "tech":["python","Django","Django Rest Framework","PostgreSQL","AWS-S3","Shiprocket-API","React","NextJS","TailwindCSS","MantineUI"],
       "image": "/assets/projects/iarmours.png",
-      "github": "https://github.com/smark-ARK/simple_social.git",
-      "live": "https://simple-social-smark.netlify.app/",
+      "github": "https://github.com/smark-ARK/IArmours-Frontend.git",
+      "live": "https://iarmours.com/",
       "detail": "/project/1",
       "subtopics": [
         {
