@@ -2,10 +2,10 @@
     {
       "id": 1,
       "title": "Simple Social",
-      "description": "In the digital age, social media platforms have become an essential part of our daily lives, connecting people from all over the world and facilitating communication and sharing of ideas. To build a social media app, developers need to create an API that can handle various user actions, such as creating an account, posting content, liking posts, and viewing other users' posts. This essay will describe the features of a REST API that could be used to build a simple social media app.",
+      "description": "Simple Social is a social media app that allows users to connect with friends, share posts, and chat in real time. I developed this project to showcase my skills in full-stack development, real-time communication, and collaborative teamwork. Simple Social is a great way to stay connected with friends and family, share your interests, and discover new things. It is also a great way to practice your social media skills and learn more about full-stack development.",
       "tag":"A Rest API for a simple social media app.",
-      "tech":["python","FastAPI","PostgreSQL","SQLAlchemy","Alembic"],
-      "image": "/assets/projects/simple_social_frontend.png",
+      "tech":["python","FastAPI","PostgreSQL","SQLAlchemy","Alembic", "Socket.io", "GCP", "React", "TailwindCSS"],
+      "image": "/assets/projects/simple-social.png",
       "github": "https://github.com/smark-ARK/simple_social.git",
       "live": "https://simple-social-smark.netlify.app/",
       "detail": "/project/1",
@@ -19,15 +19,35 @@
       ]
     },
     {
+      "id": 1,
+      "title": "IArmours",
+      "description": "A bespoke e-commerce platform for Apple accessories, providing a seamless and engaging shopping experience for customers. Features include browsing, searching, filtering items, viewing specific items, selecting devices and colors, adjusting quantities, adding items to cart, purchasing directly, cash on delivery (COD) and online payment optionsand select their shipping address at checkout.",
+      "tag":"A Rest API for a simple social media app.",
+      "tech":["python","Django","Django Rest Framework","PostgreSQL","AWS-S3","Shiprocket-API","React","NextJS","TailwindCSS","MantineUI"],
+      "image": "/assets/projects/iarmours.png",
+      "github": "https://github.com/smark-ARK/simple_social.git",
+      "live": "https://simple-social-smark.netlify.app/",
+      "detail": "/project/1",
+      "subtopics": [
+        {
+          "id":1,
+          "title":"Authentication",
+          "description":"To start with, the API would require users to authenticate using a username and password. This ensures that only authorized users can access the app's features and that their data is secure. Upon successful authentication, the API would return a JSON Web Token (JWT) that would need to be included in all subsequent API requests as an Authorization header.",
+          "image":"/assets/projects/simple_social_auth.png"
+        }
+      ]
+    },
+
+    {
       "id": 2,
       "title": "Job Engine",
-      "description": "In the digital age, social media platforms have become an essential part of our daily lives, connecting people from all over the world and facilitating communication and sharing of ideas. To build a social media app, developers need to create an API that can handle various user actions, such as creating an account, posting content, liking posts, and viewing other users' posts. This essay will describe the features of a REST API that could be used to build a simple social media app.",
+      "description": "A robust and scalable REST API that powers the entire hiring process for recruiters and job seekers. Recruiters can create company profiles, post jobs, and hire candidates with ease. Job seekers can create their profiles, search and apply for jobs, and track their applications. Job Engine is the perfect solution for businesses that want to streamline their hiring process and make it easier to find and hire the best talent.",
       "tag":"A Rest API for a simple Job Seaech and recruiting app.",
       "image": "/assets/projects/job_engine_swagger_docs.png",
       "github": "https://github.com/smark-ARK/job_engine_API.git",
       "live": "https://job-engine-api.onrender.com/docs",
       "detail": "/project/2",
-      "tech":["python","FastAPI","PostgreSQL"],
+      "tech":["python","FastAPI","PostgreSQL","SQLAlchemy","Alembic"],
       "subtopics": [
         {
           "id": 1,
