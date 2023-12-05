@@ -55,32 +55,6 @@
           "image":"/assets/projects/simple_social_auth.png"
         }
       ]
-    },
-
-    {
-      "id": 4,
-      "title": "Job Engine",
-      "description": "A robust and scalable REST API that powers the entire hiring process for recruiters and job seekers. Recruiters can create company profiles, post jobs, and hire candidates with ease. Job seekers can create their profiles, search and apply for jobs, and track their applications. Job Engine is the perfect solution for businesses that want to streamline their hiring process and make it easier to find and hire the best talent.",
-      "tag":"A Rest API for a simple Job Seaech and recruiting app.",
-      "image": "/assets/projects/job_engine_swagger_docs.png",
-      "github": "https://github.com/smark-ARK/job_engine_API.git",
-      "live": "https://job-engine-api.onrender.com/docs",
-      "detail": "/project/2",
-      "tech":["python","FastAPI","PostgreSQL","SQLAlchemy","Alembic"],
-      "subtopics": [
-        {
-          "id": 1,
-          "title": "Subtopic 1",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "image": "/images/subtopic1.png"
-        },
-        {
-          "id": 2,
-          "title": "Subtopic 2",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "image": "/images/subtopic2.png"
-        }
-      ]
     }
   ]
   
