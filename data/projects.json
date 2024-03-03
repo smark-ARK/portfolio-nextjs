@@ -1,13 +1,13 @@
 [
     {
       "id": 1,
-      "title": "Simple Social",
-      "description": "Simple Social is a social media app that allows users to connect with friends, share posts, and chat in real time. I developed this project to showcase my skills in full-stack development, real-time communication, and collaborative teamwork. Simple Social is a great way to stay connected with friends and family, share your interests, and discover new things. It is also a great way to practice your social media skills and learn more about full-stack development.",
-      "tag":"A Rest API for a simple social media app.",
-      "tech":["python","FastAPI","PostgreSQL","SQLAlchemy","Alembic", "Socket.io", "GCP", "React", "TailwindCSS"],
-      "image": "/assets/projects/simple-social.png",
-      "github": "https://github.com/smark-ARK/simple_social.git",
-      "live": "https://simple-social-smark.netlify.app/",
+      "title": "Flickz",
+      "description": "Flickz is a social media app that allows users to connect with friends, share posts, and chat in real time. I developed this project to showcase my skills in full-stack development, real-time communication, and collaborative teamwork. Flickz is a great way to stay connected with friends and family, share your interests, and discover new things. It is also a great way to practice your social media skills and learn more about full-stack development.",
+      "tag":"A Rest API for a Flickz media app.",
+      "tech":["python","FastAPI","PostgreSQL","SQLAlchemy","Alembic", "Socket.io", "AWS", "React", "TailwindCSS"],
+      "image": "/assets/projects/flickz-home.png",
+      "github": "https://github.com/smark-ARK/Flickz.git",
+      "live": "https://flickz.vercel.app/",
       "detail": "/project/1",
       "subtopics": [
         {
@@ -22,7 +22,7 @@
       "id": 2,
       "title": "IArmours",
       "description": "A bespoke e-commerce platform for Apple accessories, providing a seamless and engaging shopping experience for customers. Features include browsing, searching, filtering items, viewing specific items, selecting devices and colors, adjusting quantities, adding items to cart, purchasing directly, cash on delivery (COD) and online payment optionsand select their shipping address at checkout.",
-      "tag":"A Rest API for a simple social media app.",
+      "tag":"A Rest API for a Flickz media app.",
       "tech":["python","Django","Django Rest Framework","PostgreSQL","AWS-S3","Shiprocket-API","React","NextJS","TailwindCSS","MantineUI"],
       "image": "/assets/projects/iarmours.png",
       "github": "https://github.com/smark-ARK/IArmours-Frontend.git",
@@ -39,14 +39,32 @@
     },
     {
       "id": 3,
+      "title": "Mind Castle",
+      "description": "🏰 Mind Castle API Seamlessly manage notes with FastAPI & GraphQL. Authenticate users securely, create, share notes effortlessly. Powered by PostgreSQL & SQLAlchemy for reliable data storage. Effortlessly navigate shared notes with paginated API support. Simplify your note-taking experience today and join the Mind Castle community for unparalleled convenience in managing your notes!",
+      "tag":"A Rest API for Secure. Simple. Effortless Note Management.",
+      "tech":["FastAPI", "GraphQL", "PostgreSQL", "SQLAlchemy","AWS"],
+      "image": "/assets/projects/notes-home.png",
+      "github": "https://github.com/smark-ARK/mind-castle-gql-server",
+      "live": "https://mind-castle-gql.vercel.app",
+      "detail": "/project/3",
+      "subtopics": [
+        {
+          "id":1,
+          "title":"Authentication",
+          "description":"To start with, the API would require users to authenticate using a username and password. This ensures that only authorized users can access the app's features and that their data is secure. Upon successful authentication, the API would return a JSON Web Token (JWT) that would need to be included in all subsequent API requests as an Authorization header.",
+          "image":"/assets/projects/simple_social_auth.png"
+        }
+      ]
+    },{
+      "id": 4,
       "title": "Job Board",
       "description": "I built a comprehensive job board application using GraphQL to demonstrate my expertise in this advanced query language. The platform facilitates seamless job posting management, enabling recruiters to post and manage job openings effectively. Job seekers can easily search and filter job postings to find relevant opportunities. The application employs JWT-based authentication and role-based authorization to safeguard user data and enforce access control.",
-      "tag":"A Rest API for a simple social media app.",
+      "tag":"A Rest API for a Flickz media app.",
       "tech":["NodeJS","ExpressJS","SQLite","Knex","AWS","React","GraphQL","JWT"],
       "image": "/assets/projects/job-board-home.png",
       "github": "https://github.com/smark-ARK/job-board-gql-server",
       "live": "https://job-board-graphql.netlify.app",
-      "detail": "/project/3",
+      "detail": "/project/4",
       "subtopics": [
         {
           "id":1,
